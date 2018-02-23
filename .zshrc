@@ -103,10 +103,10 @@ alias disable-touchpad="synclient TouchpadOff=1"
 # GIT alias
 alias git-config-enable-gpgsign="git config commit.gpgsign true"
 
-alias git-config-tt-signingkey="git config user.signingkey 3341BA376EE3C06C"
 alias git-config-tt-email="git config user.email dcunha@tomitribe.com"
+alias git-config-tt-signingkey="git config user.signingkey 3341BA376EE3C06C"
 
-alias git-config-apache-email="git config user.email danielsoro@apache.com"
+alias git-config-apache-email="git config user.email danielsoro@apache.org"
 alias git-config-apache-signingkey="git config user.signingkey 8B9CC2B9193683E4"
 
 alias git-config-gmail-email="git config --global user.email danielsoro@gmail.com"
