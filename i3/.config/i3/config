@@ -10,6 +10,8 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 for_window [class="^.*"] border pixel 1
+for_window [class="firefox" window_role="alert"] floating enable
+no_focus [window_role="alert"]
 
 set $mod Mod4
 # set $mod Mod1
