@@ -1,3 +1,5 @@
 return {
-  "simrat39/rust-tools.nvim",
+  "mrcjkb/rustaceanvim",
+  version = "4",
+  lazy = false,
 }
