@@ -61,7 +61,7 @@ exec --no-startup-id nm-applet
 # Locker configuration
 # Should automatically suspend the PC after 30 minutes
 # bind key to mod + l to lock i3wm
-exec --no-startup-id xautolock -time 30 -locker "systemctl suspend"
+exec --no-startup-id xautolock -detectsleep -time 30 -locker "systemctl suspend"
 bindsym $mod+l exec --no-startup-id "i3lock -i ~/nice-blue-background.png", mode default;
 
 
