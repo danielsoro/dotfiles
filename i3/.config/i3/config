@@ -17,7 +17,7 @@ set $mod Mod4
 # set $mod Mod1
 
 exec --no-startup-id picom
-exec --no-startup-id feh --bg-scale ~/nord-wave.png
+exec --no-startup-id feh --bg-scale ~/tetris.png
 exec --no-startup-id xrdb -merge ~/.Xresources
 exec_always --no-startup-id setxkbmap -layout us -variant intl -option ctrl:nocaps
 
@@ -50,7 +50,7 @@ exec --no-startup-id dex --autostart --environment i3
 # Should automatically suspend the PC after 30 minutes
 # bind key to mod + l to lock i3wm
 exec --no-startup-id xautolock -detectsleep -time 30 -locker "systemctl suspend"
-bindsym $mod+l exec --no-startup-id "i3lock -i ~/nord-wave.png --nofork", mode default;
+bindsym $mod+l exec --no-startup-id "i3lock -i ~/tetris.png --nofork", mode default;
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
