@@ -2,13 +2,13 @@ import = ["~/.config/alacritty/catppuccin-mocha.toml"]
 
 [window]
 dimensions = { lines = 50, columns = 120 }
-opacity = 0.98
+opacity = 0.8
 
 [env]
 TERM = "xterm-256color"
 
 [font]
-size = 11.0
+size = 14.0
 
 [font.bold]
 family = "CaskaydiaMono Nerd Font"
