@@ -19,7 +19,7 @@ set $mod Mod4
 exec --no-startup-id picom
 exec --no-startup-id feh --bg-scale ~/tetris.png
 exec --no-startup-id xrdb -merge ~/.Xresources
-exec_always --no-startup-id setxkbmap -layout us -variant intl -option ctrl:nocaps
+# exec_always --no-startup-id setxkbmap -layout us -variant intl -option ctrl:nocaps
 
 # kill any hanging polybar processes
 exec_always killall polybar
