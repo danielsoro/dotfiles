@@ -108,12 +108,12 @@ export EDITOR='nvim'
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias x="xinit ~/.xinitrc -- -nolisten tcp"
+alias x="startx"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias vi="nvim"
 alias vim="nvim"
-alias n="nvim"
+alias v="nvim"
 
 # CONFIGURATIONS
 export GPG_TTY=$TTY
