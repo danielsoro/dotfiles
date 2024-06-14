@@ -114,7 +114,7 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias vi="nvim"
 alias vim="nvim"
 alias v="nvim"
-
+alias sudo="sudo -E"
 # CONFIGURATIONS
 export GPG_TTY=$TTY
 
