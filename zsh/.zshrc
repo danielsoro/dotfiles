@@ -12,7 +12,9 @@ alias zshconfig="nvim ~/.zshrc"
 alias vi="nvim"
 alias vim="nvim"
 alias v="nvim"
-alias sudo="sudo -E"
+alias ls="exa --icons --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group"
+alias la="ls -a"
+alias ll="ls -al"
 
 export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
@@ -21,6 +23,7 @@ setopt appendhistory
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 autoload -U compinit && compinit
 
