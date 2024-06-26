@@ -1,4 +1,5 @@
 eval "$(starship init zsh)"
+source <(fzf --zsh)
 
 export EDITOR='nvim'
 export GPG_TTY=$TTY
