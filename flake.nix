@@ -88,6 +88,7 @@
 
             dock.persistent-apps = [
               "${pkgs.kitty}/Applications/Kitty.app"
+	      "/Applications/1Password.app"
               "${pkgs.google-chrome}/Applications/Google Chrome.app"
               "/System/Applications/Mail.app"
             ];
