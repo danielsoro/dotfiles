@@ -50,7 +50,6 @@
             pkgs.google-chrome
             pkgs.vscode
             pkgs.telegram-desktop
-	    pkgs.xclip
           ];
 
         fonts.packages =
