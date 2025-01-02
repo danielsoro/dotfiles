@@ -65,6 +65,7 @@
             "1password"
             "logi-options+"
             "keybase"
+            "spotify"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
