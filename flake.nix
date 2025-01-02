@@ -206,7 +206,7 @@
             enable = true;
             settings = {
               font_family = "JetBrainsMono Nerd Font";
-              font_size = 16;
+              font_size = 18;
             };
           };
         };
