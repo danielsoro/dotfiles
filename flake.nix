@@ -88,7 +88,7 @@
 
             dock.persistent-apps = [
               "${pkgs.kitty}/Applications/Kitty.app"
-	      "/Applications/1Password.app"
+              "/Applications/1Password.app"
               "${pkgs.google-chrome}/Applications/Google Chrome.app"
               "/System/Applications/Mail.app"
             ];
@@ -182,14 +182,22 @@
 
           zsh = {
             enable = true;
+
             oh-my-zsh = {
               enable = true;
               theme = "robbyrussell";
               plugins = [ "git" "sudo" ];
             };
+
             shellAliases = {
               switch = "darwin-rebuild switch --flake ~/.config/nix#dcunha";
             };
+
+            initExtra = ''
+              . "${pkgs.asdf-vm}/share/asdf-vm/asdf.sh"
+              autoload -Uz bashcompinit && bashcompinit
+              . "${pkgs.asdf-vm}/share/asdf-vm/completions/asdf.bash"
+            '';
           };
 
           kitty = {
