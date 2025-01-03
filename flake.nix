@@ -66,6 +66,7 @@
             "logi-options+"
             "keybase"
             "spotify"
+            "firefox"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
@@ -81,6 +82,11 @@
         system = {
           stateVersion = 5;
           configurationRevision = self.rev or self.dirtyRev or null;
+
+          keyboard = {
+            enableKeyMapping = true;
+          };
+
           defaults = {
             finder.FXPreferredViewStyle = "clmv";
             loginwindow.GuestEnabled = false;
@@ -88,12 +94,18 @@
             NSGlobalDomain.AppleInterfaceStyle = "Dark";
             NSGlobalDomain.KeyRepeat = 2;
 
-            dock.persistent-apps = [
-              "${pkgs.kitty}/Applications/Kitty.app"
-              "/Applications/1Password.app"
-              "${pkgs.google-chrome}/Applications/Google Chrome.app"
-              "/System/Applications/Mail.app"
-            ];
+            dock = {
+              autohide = false;
+              show-recents = false;
+              persistent-apps = [
+                "${pkgs.kitty}/Applications/Kitty.app"
+                "/Applications/1Password.app"
+                "/Applications/Firefox.app"
+                "/Applications/Spotify.app"
+                "/System/Applications/Mail.app"
+              ];
+            };
+
           };
 
           activationScripts.applications.text =
