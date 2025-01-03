@@ -150,7 +150,6 @@
       # HOME-MANAGER CONFIG
       homeconfig = { pkgs, ... }: {
         home.stateVersion = "25.05";
-        home.packages = with pkgs; [ ];
 
         home.sessionVariables = {
           EDITOR = "nvim";
