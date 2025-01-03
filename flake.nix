@@ -47,6 +47,7 @@
             pkgs.vim
             pkgs.neovim
             pkgs.tmux
+            pkgs.htop
             pkgs.google-chrome
             pkgs.vscode
             pkgs.telegram-desktop
