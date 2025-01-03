@@ -35,6 +35,7 @@
             pkgs.kbfs
             pkgs.zsh
             pkgs.fzf
+            pkgs.ghostty
             pkgs.scmpuff
             pkgs.gnupg
             pkgs.oh-my-zsh
@@ -42,7 +43,6 @@
             pkgs.git
             pkgs.asdf-vm
             pkgs.rustup
-            pkgs.kitty
             pkgs.mkalias
             pkgs.vim
             pkgs.neovim
@@ -89,7 +89,7 @@
             NSGlobalDomain.KeyRepeat = 2;
 
             dock.persistent-apps = [
-              "${pkgs.kitty}/Applications/Kitty.app"
+              "${pkgs.kitty}/Applications/Ghostty.app"
               "/Applications/1Password.app"
               "${pkgs.google-chrome}/Applications/Google Chrome.app"
               "/System/Applications/Mail.app"
@@ -202,10 +202,10 @@
             '';
           };
 
-          kitty = {
+          ghostty = {
             enable = true;
+            enableZshIntegration = true;
             settings = {
-              font_family = "JetBrainsMono Nerd Font";
               font_size = 18;
             };
           };
