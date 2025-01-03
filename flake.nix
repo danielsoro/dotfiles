@@ -182,6 +182,10 @@
             enable = true;
           };
 
+          fzf = {
+            enable = true;
+          };
+
           zsh = {
             enable = true;
 
