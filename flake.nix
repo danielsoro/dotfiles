@@ -35,7 +35,6 @@
             pkgs.kbfs
             pkgs.zsh
             pkgs.fzf
-            pkgs.kitty
             pkgs.scmpuff
             pkgs.gnupg
             pkgs.oh-my-zsh
@@ -68,6 +67,7 @@
             "keybase"
             "spotify"
             "firefox"
+            "ghostty"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
@@ -99,7 +99,7 @@
               autohide = false;
               show-recents = false;
               persistent-apps = [
-                "${pkgs.kitty}/Applications/Kitty.app"
+                "/Applications/Ghostty.app"
                 "/Applications/1Password.app"
                 "/Applications/Firefox.app"
                 "/Applications/Spotify.app"
@@ -168,6 +168,9 @@
           EDITOR = "nvim";
         };
 
+
+        xdg.configFile."ghostty/config".source = ./dotfiles/ghostty.config;
+
         programs = {
           home-manager = {
             enable = true;
@@ -216,14 +219,6 @@
               autoload -Uz bashcompinit && bashcompinit
               . "${pkgs.asdf-vm}/share/asdf-vm/completions/asdf.bash"
             '';
-          };
-
-          kitty = {
-            enable = true;
-            settings = {
-              font_family = "JetBrainsMono Nerd Font";
-              font_size = 18;
-            };
           };
         };
       };
