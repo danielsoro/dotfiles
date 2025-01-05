@@ -39,7 +39,6 @@
             pkgs.gnupg
             pkgs.oh-my-zsh
             pkgs.neofetch
-            pkgs.zed-editor
             pkgs.git
             pkgs.asdf-vm
             pkgs.rustup
@@ -100,7 +99,6 @@
               show-recents = false;
               persistent-apps = [
                 "/Applications/Ghostty.app"
-                "${pkgs.zed-editor}/Applications/Zed.app"
                 "/Applications/1Password.app"
                 "/Applications/Firefox.app"
                 "/Applications/Spotify.app"
