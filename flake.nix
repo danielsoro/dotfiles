@@ -67,6 +67,7 @@
             "spotify"
             "firefox"
             "ghostty"
+            "microsoft-office"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
