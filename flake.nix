@@ -50,6 +50,7 @@
             pkgs.google-chrome
             pkgs.vscode
             pkgs.telegram-desktop
+            pkgs.asciinema
           ];
 
         fonts.packages =
