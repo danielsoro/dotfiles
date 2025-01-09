@@ -110,6 +110,10 @@
 
           };
 
+         activationScripts.extraActivation.text = ''
+            softwareupdate --install-rosetta --agree-to-license
+         '';
+
           activationScripts.applications.text =
             let
               env = pkgs.buildEnv {
