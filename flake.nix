@@ -35,6 +35,7 @@
             pkgs.kbfs
             pkgs.zsh
             pkgs.fzf
+            pkgs.fd
             pkgs.scmpuff
             pkgs.gnupg
             pkgs.oh-my-zsh
