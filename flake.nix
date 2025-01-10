@@ -61,6 +61,11 @@
 
         homebrew = {
           enable = true;
+
+          brews = [
+            "pinentry-mac"
+          ];
+
           casks = [
             "jetbrains-toolbox"
             "1password"
@@ -176,6 +181,7 @@
 
 
         xdg.configFile."ghostty/config".source = ./dotfiles/ghostty.config;
+        xdg.configFile."gnupg/gpg-agent.conf".text = "pinentry-program /opt/homebrew/bin/pinentry-mac";
 
         programs = {
           home-manager = {
