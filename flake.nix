@@ -52,11 +52,14 @@
             pkgs.vscode
             pkgs.telegram-desktop
             pkgs.asciinema
+            pkgs.lunarvim
           ];
 
         fonts.packages =
           [
             pkgs.nerd-fonts.jetbrains-mono
+            pkgs.jetbrains-mono
+            pkgs.fira
           ];
 
         homebrew = {
@@ -106,6 +109,7 @@
               autohide = false;
               show-recents = false;
               persistent-apps = [
+                "/System/Applications/Launchpad.app"
                 "/Applications/Ghostty.app"
                 "/Applications/1Password.app"
                 "/Applications/Firefox.app"
@@ -176,7 +180,7 @@
         home.stateVersion = "25.05";
 
         home.sessionVariables = {
-          EDITOR = "nvim";
+          EDITOR = "lvim";
         };
 
 
@@ -224,6 +228,7 @@
 
             shellAliases = {
               switch = "darwin-rebuild switch --flake ~/.config/nix#dcunha";
+              n = "lvim";
             };
 
             initExtra = ''
