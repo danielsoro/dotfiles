@@ -52,7 +52,6 @@
             pkgs.vscode
             pkgs.telegram-desktop
             pkgs.asciinema
-            pkgs.lunarvim
           ];
 
         fonts.packages =
@@ -67,6 +66,7 @@
 
           brews = [
             "pinentry-mac"
+            "podman"
           ];
 
           casks = [
@@ -78,6 +78,7 @@
             "firefox"
             "ghostty"
             "microsoft-office"
+            "podman-desktop"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
@@ -180,7 +181,7 @@
         home.stateVersion = "25.05";
 
         home.sessionVariables = {
-          EDITOR = "lvim";
+          EDITOR = "nvim";
         };
 
 
@@ -228,7 +229,7 @@
 
             shellAliases = {
               switch = "darwin-rebuild switch --flake ~/.config/nix#dcunha";
-              n = "lvim";
+              n = "nvim";
             };
 
             initExtra = ''
