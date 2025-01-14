@@ -62,9 +62,9 @@
           ];
 
         homebrew = {
-          enable = true;
+         enable = true;
 
-          brews = [
+         brews = [
             "pinentry-mac"
             "podman"
           ];
@@ -79,6 +79,7 @@
             "ghostty"
             "microsoft-office"
             "podman-desktop"
+            "vlc"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
