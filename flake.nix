@@ -52,6 +52,7 @@
             pkgs.vscode
             pkgs.telegram-desktop
             pkgs.asciinema
+            pkgs.aerospace
           ];
 
         fonts.packages =
