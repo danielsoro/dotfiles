@@ -50,7 +50,6 @@
             pkgs.htop
             pkgs.google-chrome
             pkgs.vscode
-            pkgs.telegram-desktop
             pkgs.asciinema
             pkgs.aerospace
           ];
@@ -77,9 +76,11 @@
             "keybase"
             "spotify"
             "firefox"
+            "google-chrome"
             "ghostty"
             "microsoft-office"
             "podman-desktop"
+            "telegram"
             "vlc"
           ];
           onActivation.cleanup = "zap";
