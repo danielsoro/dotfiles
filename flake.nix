@@ -16,10 +16,10 @@
     let
       # DEFAULT NIX-DARWING CONFIG
       configuration = { pkgs, config, ... }: {
-        services.nix-daemon.enable = true;
 
         #NIX SETTINGS
         nix = {
+          enable = true;
           settings.experimental-features = "nix-command flakes";
         };
 
