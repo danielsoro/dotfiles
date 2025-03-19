@@ -116,7 +116,7 @@
                 "/System/Applications/Launchpad.app"
                 "/Applications/Ghostty.app"
                 "/Applications/1Password.app"
-                "/Applications/Firefox.app"
+                "/Applications/Google Chrome.app"
                 "/Applications/Spotify.app"
                 "/System/Applications/Mail.app"
               ];
