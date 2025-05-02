@@ -235,7 +235,7 @@
               n = "nvim";
             };
 
-            initExtra = ''
+            initContent = ''
               . "${pkgs.asdf-vm}/share/asdf-vm/asdf.sh"
               autoload -Uz bashcompinit && bashcompinit
               . "${pkgs.asdf-vm}/share/asdf-vm/completions/asdf.bash"
