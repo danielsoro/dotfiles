@@ -82,6 +82,7 @@
             "podman-desktop"
             "telegram"
             "vlc"
+            "signal"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
