@@ -83,6 +83,7 @@
             "telegram"
             "vlc"
             "signal"
+            "whatsapp"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
@@ -233,7 +234,7 @@
             };
 
             shellAliases = {
-              switch = "darwin-rebuild switch --flake ~/.config/nix#dcunha";
+              switch = "sudo darwin-rebuild switch --flake ~/.config/nix#dcunha";
               n = "nvim";
             };
 
