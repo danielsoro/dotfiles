@@ -191,7 +191,7 @@
 
 
         xdg.configFile."ghostty/config".source = ./dotfiles/ghostty.config;
-        xdg.configFile."gnupg/gpg-agent.conf".text = "pinentry-program /opt/homebrew/bin/pinentry-mac";
+        xdg.configFile."gnupg/gpg-agent.conf".text = "pinentry-program pinentry-mac";
 
         programs = {
           home-manager = {
