@@ -115,7 +115,7 @@
               autohide = false;
               show-recents = false;
               persistent-apps = [
-                "/System/Applications/Launchpad.app"
+                "/System/Applications/Apps.app"
                 "/Applications/Ghostty.app"
                 "/Applications/1Password.app"
                 "/Applications/Google Chrome.app"
