@@ -84,6 +84,7 @@
             "vlc"
             "signal"
             "whatsapp"
+            "zoom"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
