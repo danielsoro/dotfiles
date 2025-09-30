@@ -85,6 +85,7 @@
             "signal"
             "whatsapp"
             "zoom"
+            "zed"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
