@@ -86,6 +86,7 @@
             "whatsapp"
             "zoom"
             "zed"
+            "protonvpn"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
