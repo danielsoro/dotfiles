@@ -87,6 +87,7 @@
             "zoom"
             "zed"
             "protonvpn"
+            "logi-options+"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
@@ -121,7 +122,7 @@
                 "/System/Applications/Apps.app"
                 "/Applications/Ghostty.app"
                 "/Applications/1Password.app"
-                "/Applications/Google Chrome.app"
+                "/Applications/Firefox.app"
                 "/Applications/Spotify.app"
                 "/System/Applications/Mail.app"
               ];
