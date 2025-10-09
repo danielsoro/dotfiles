@@ -87,6 +87,7 @@
             "zoom"
             "zed"
             "protonvpn"
+            "logitech-options"
             "logi-options+"
           ];
           onActivation.cleanup = "zap";
