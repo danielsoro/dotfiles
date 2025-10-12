@@ -89,6 +89,7 @@
             "protonvpn"
             "logitech-options"
             "logi-options+"
+            "visual-studio-code"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
@@ -122,6 +123,7 @@
               persistent-apps = [
                 "/System/Applications/Apps.app"
                 "/Applications/Ghostty.app"
+                "/Applications/Visual Studio Code.app"
                 "/Applications/1Password.app"
                 "/Applications/Firefox.app"
                 "/Applications/Spotify.app"
