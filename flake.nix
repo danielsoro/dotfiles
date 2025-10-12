@@ -123,6 +123,7 @@
               persistent-apps = [
                 "/System/Applications/Apps.app"
                 "/Applications/Ghostty.app"
+                "/Applications/Zed.app"
                 "/Applications/Visual Studio Code.app"
                 "/Applications/1Password.app"
                 "/Applications/Firefox.app"
