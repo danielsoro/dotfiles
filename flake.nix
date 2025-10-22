@@ -48,10 +48,7 @@
             pkgs.neovim
             pkgs.tmux
             pkgs.htop
-            pkgs.google-chrome
-            pkgs.vscode
             pkgs.asciinema
-            pkgs.aerospace
           ];
 
         fonts.packages =
@@ -116,6 +113,7 @@
             loginwindow.GuestEnabled = false;
             NSGlobalDomain.AppleICUForce24HourTime = true;
             NSGlobalDomain.KeyRepeat = 2;
+            NSGlobalDomain.AppleInterfaceStyle = "Dark";
 
             dock = {
               autohide = false;
@@ -123,8 +121,6 @@
               persistent-apps = [
                 "/System/Applications/Apps.app"
                 "/Applications/Ghostty.app"
-                "/Applications/Zed.app"
-                "/Applications/Visual Studio Code.app"
                 "/Applications/1Password.app"
                 "/Applications/Firefox.app"
                 "/Applications/Spotify.app"
@@ -199,7 +195,6 @@
 
 
         xdg.configFile."ghostty/config".source = ./dotfiles/ghostty.config;
-        xdg.configFile."gnupg/gpg-agent.conf".text = "pinentry-program pinentry-mac";
 
         programs = {
           home-manager = {
@@ -209,18 +204,16 @@
           git =
             {
               enable = true;
-              userName = "Daniel Cunha";
-              userEmail = "danielsoro@gmail.com";
-
+              settings.user.name = "Daniel Cunha";
+              settings.user.email = "danielsoro@gmail.com";
+              settings.init.defaultBranch = "main";
+              settings.push.autoSetupRemote = true;
               ignores = [ ".DS_Store" ".idea" ".vscode" ];
               signing = {
                 key = "EAF61BB1C055D18D";
                 signByDefault = true;
               };
-              extraConfig = {
-                init.defaultBranch = "main";
-                push.autoSetupRemote = true;
-              };
+
             };
 
           scmpuff = {
