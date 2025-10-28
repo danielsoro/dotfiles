@@ -87,6 +87,7 @@
             "logitech-options"
             "logi-options+"
             "visual-studio-code"
+            "itau"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
