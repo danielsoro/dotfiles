@@ -64,8 +64,6 @@
          brews = [
             "pinentry-mac"
             "podman"
-            "docker"
-            "docker-buildx"
           ];
 
           casks = [
