@@ -64,6 +64,8 @@
          brews = [
             "pinentry-mac"
             "podman"
+	          "ripgrep"
+            "npm"
           ];
 
           casks = [
@@ -88,6 +90,7 @@
             "logi-options+"
             "visual-studio-code"
             "itau"
+            "discord"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
