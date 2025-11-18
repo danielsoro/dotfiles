@@ -66,6 +66,7 @@
             "podman"
 	          "ripgrep"
             "npm"
+            "go-blueprint"
           ];
 
           casks = [
