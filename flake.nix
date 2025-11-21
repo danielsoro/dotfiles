@@ -67,6 +67,7 @@
 	          "ripgrep"
             "npm"
             "go-blueprint"
+            "cmake"
           ];
 
           casks = [
