@@ -29,6 +29,10 @@
           hostPlatform = "aarch64-darwin";
         };
 
+        environment.variables = {
+          PATH="$HOME/.asdf/shims:$PATH";
+        };
+
         environment.systemPackages =
           [
             pkgs.nixpkgs-fmt
@@ -245,9 +249,7 @@
             };
 
             initContent = ''
-              . "${pkgs.asdf-vm}/share/asdf-vm/asdf.sh"
               autoload -Uz bashcompinit && bashcompinit
-              . "${pkgs.asdf-vm}/share/asdf-vm/completions/asdf.bash"
             '';
           };
         };
