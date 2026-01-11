@@ -80,7 +80,6 @@
             "logi-options+"
             "keybase"
             "spotify"
-            "firefox"
             "google-chrome"
             "ghostty"
             "microsoft-office"
@@ -132,7 +131,7 @@
                 "/System/Applications/Apps.app"
                 "/Applications/Ghostty.app"
                 "/Applications/1Password.app"
-                "/Applications/Firefox.app"
+                "/Applications/Google Chrome.app"
                 "/Applications/Spotify.app"
                 "/System/Applications/Mail.app"
               ];
