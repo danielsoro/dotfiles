@@ -96,6 +96,7 @@
             "visual-studio-code"
             "itau"
             "discord"
+            "clockify"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
