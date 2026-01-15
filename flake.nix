@@ -72,6 +72,10 @@
             "npm"
             "go-blueprint"
             "cmake"
+            "docker"
+            "docker-compose"
+            "docker-buildx"
+            "quarkusio/tap/quarkus"
           ];
 
           casks = [
@@ -250,6 +254,7 @@
 
             initContent = ''
               autoload -Uz bashcompinit && bashcompinit
+              export DOCKER_HOST="unix://$(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')";
             '';
           };
         };
