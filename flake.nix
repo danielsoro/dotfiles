@@ -72,10 +72,9 @@
             "npm"
             "go-blueprint"
             "cmake"
-            "docker"
-            "docker-compose"
             "docker-buildx"
             "quarkusio/tap/quarkus"
+            "commitizen"
           ];
 
           casks = [
@@ -87,7 +86,6 @@
             "google-chrome"
             "ghostty"
             "microsoft-office"
-            "podman-desktop"
             "telegram"
             "vlc"
             "signal"
@@ -101,6 +99,7 @@
             "itau"
             "discord"
             "clockify"
+            "docker-desktop"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
@@ -254,7 +253,8 @@
 
             initContent = ''
               autoload -Uz bashcompinit && bashcompinit
-              export DOCKER_HOST="unix://$(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')";
+              export PATH="$HOME/.local/bin:$PATH";
+              export DOCKER_HOST="unix:///var/run/docker.sock";
             '';
           };
         };
