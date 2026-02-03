@@ -53,6 +53,7 @@
             pkgs.tmux
             pkgs.htop
             pkgs.asciinema
+            pkgs.xclip
           ];
 
         fonts.packages =
