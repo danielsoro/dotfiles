@@ -101,6 +101,7 @@
             "discord"
             "clockify"
             "docker-desktop"
+            "insomnia"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
