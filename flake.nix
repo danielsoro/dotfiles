@@ -76,6 +76,7 @@
             "docker-buildx"
             "quarkusio/tap/quarkus"
             "commitizen"
+            "terraform"
           ];
 
           casks = [
@@ -102,6 +103,7 @@
             "clockify"
             "docker-desktop"
             "insomnia"
+            "gcloud-cli"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
