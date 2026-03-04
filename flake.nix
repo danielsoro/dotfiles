@@ -43,7 +43,7 @@
             pkgs.scmpuff
             pkgs.gnupg
             pkgs.oh-my-zsh
-            pkgs.neofetch
+            pkgs.fastfetch
             pkgs.git
             pkgs.asdf-vm
             pkgs.rustup
