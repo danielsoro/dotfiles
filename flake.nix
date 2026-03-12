@@ -68,7 +68,6 @@
 
          brews = [
             "pinentry-mac"
-            "podman"
 	          "ripgrep"
             "npm"
             "go-blueprint"
@@ -77,6 +76,7 @@
             "quarkusio/tap/quarkus"
             "commitizen"
             "terraform"
+            "anomalyco/tap/opencode"
           ];
 
           casks = [
@@ -104,6 +104,8 @@
             "docker-desktop"
             "insomnia"
             "gcloud-cli"
+            "visual-studio-code"
+            "ngrok"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
