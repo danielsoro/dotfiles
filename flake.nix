@@ -82,7 +82,6 @@
           casks = [
             "jetbrains-toolbox"
             "1password"
-            "logi-options+"
             "keybase"
             "spotify"
             "google-chrome"
@@ -95,9 +94,8 @@
             "zoom"
             "zed"
             "protonvpn"
-            "logitech-options"
-            "logi-options+"
             "visual-studio-code"
+            "logi-options+"
             "itau"
             "discord"
             "clockify"
