@@ -130,7 +130,7 @@
             loginwindow.GuestEnabled = false;
             NSGlobalDomain.AppleICUForce24HourTime = true;
             NSGlobalDomain.KeyRepeat = 2;
-            NSGlobalDomain.AppleInterfaceStyle = "Dark";
+            NSGlobalDomain.AppleInterfaceStyle = null;
 
             dock = {
               autohide = false;
