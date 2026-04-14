@@ -104,6 +104,7 @@
             "gcloud-cli"
             "visual-studio-code"
             "ngrok"
+            "warp"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
@@ -137,7 +138,7 @@
               show-recents = false;
               persistent-apps = [
                 "/System/Applications/Apps.app"
-                "/Applications/Ghostty.app"
+                "/Applications/Warp.app"
                 "/Applications/1Password.app"
                 "/Applications/Google Chrome.app"
                 "/Applications/Spotify.app"
