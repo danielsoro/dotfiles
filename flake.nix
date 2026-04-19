@@ -14,7 +14,7 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager }:
     let
-      # DEFAULT NIX-DARWING CONFIG
+      # DEFAULT NIX-DARWIN CONFIG
       configuration = { pkgs, config, ... }: {
 
         #NIX SETTINGS
@@ -68,7 +68,7 @@
 
          brews = [
             "pinentry-mac"
-	          "ripgrep"
+            "ripgrep"
             "npm"
             "go-blueprint"
             "cmake"
@@ -102,7 +102,6 @@
             "docker-desktop"
             "insomnia"
             "gcloud-cli"
-            "visual-studio-code"
             "ngrok"
             "warp"
           ];
@@ -177,7 +176,7 @@
         time.timeZone = "America/Fortaleza";
 
         networking = {
-          computerName = "Daniel's MackBook Pro";
+          computerName = "Daniel's MacBook Pro";
           hostName = "godofredo";
         };
 
