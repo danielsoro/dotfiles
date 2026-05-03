@@ -66,10 +66,13 @@
         homebrew = {
          enable = true;
 
+         taps = [
+            "buo/cask-upgrade"
+          ];
+
          brews = [
             "pinentry-mac"
             "ripgrep"
-            "npm"
             "go-blueprint"
             "cmake"
             "docker-buildx"
@@ -85,15 +88,12 @@
             "keybase"
             "spotify"
             "google-chrome"
-            "ghostty"
             "microsoft-office"
             "telegram"
             "vlc"
             "signal"
             "whatsapp"
-            "zoom"
             "zed"
-            "protonvpn"
             "visual-studio-code"
             "logi-options+"
             "itau"
@@ -102,7 +102,6 @@
             "docker-desktop"
             "insomnia"
             "gcloud-cli"
-            "ngrok"
             "warp"
           ];
           onActivation.cleanup = "zap";
