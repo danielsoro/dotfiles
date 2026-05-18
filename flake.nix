@@ -79,7 +79,7 @@
             "quarkusio/tap/quarkus"
             "commitizen"
             "terraform"
-            "anomalyco/tap/opencode"
+            "gh"
           ];
 
           casks = [
