@@ -254,6 +254,10 @@
               n = "nvim";
             };
 
+            profileExtra = ''
+              export PATH="$PATH:/usr/local/bin";
+            '';
+
             initContent = ''
               autoload -Uz bashcompinit && bashcompinit
               export PATH="$HOME/.local/bin:$PATH";
@@ -282,6 +286,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.verbose = true;
+            home-manager.backupFileExtension = "backup";
             home-manager.users.dcunha = homeconfig;
           }
         ];
