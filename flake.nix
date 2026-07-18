@@ -103,6 +103,7 @@
             "insomnia"
             "gcloud-cli"
             "warp"
+            "supacode"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
@@ -137,6 +138,7 @@
               persistent-apps = [
                 "/System/Applications/Apps.app"
                 "/Applications/Warp.app"
+                "/Applications/Supacode.app"
                 "/Applications/1Password.app"
                 "/Applications/Google Chrome.app"
                 "/Applications/Spotify.app"
