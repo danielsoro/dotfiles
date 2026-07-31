@@ -90,7 +90,6 @@
             "google-chrome"
             "microsoft-office"
             "telegram"
-            "vlc"
             "signal"
             "whatsapp"
             "zed"
@@ -101,7 +100,6 @@
             "clockify"
             "docker-desktop"
             "insomnia"
-            "gcloud-cli"
             "warp"
             "supacode"
           ];
