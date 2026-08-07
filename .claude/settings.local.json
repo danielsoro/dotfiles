@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/dcunha/.config/nix remote -v)",
+      "Bash(git -C /Users/dcunha/.config/nix branch -vv)"
+    ]
+  }
+}
