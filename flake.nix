@@ -202,7 +202,7 @@
       };
 
       # HOME-MANAGER CONFIG
-      homeconfig = { pkgs, ... }: {
+      homeconfig = { pkgs, config, ... }: {
         home.stateVersion = "25.05";
 
         home.sessionVariables = {
@@ -211,6 +211,9 @@
 
 
         xdg.configFile."ghostty/config".source = ./dotfiles/ghostty.config;
+
+        xdg.configFile."zsh-custom/themes/robbyrussell-light.zsh-theme".source =
+          ./dotfiles/zsh-custom/themes/robbyrussell-light.zsh-theme;
 
         programs = {
           home-manager = {
@@ -245,7 +248,8 @@
 
             oh-my-zsh = {
               enable = true;
-              theme = "robbyrussell";
+              custom = "${config.xdg.configHome}/zsh-custom";
+              theme = "robbyrussell-light";
               plugins = [ "git" "sudo" ];
             };
 
