@@ -88,6 +88,7 @@
             "keybase"
             "spotify"
             "google-chrome"
+            "firefox"
             "microsoft-office"
             "telegram"
             "signal"
