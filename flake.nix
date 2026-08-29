@@ -139,7 +139,7 @@
                 "/Applications/Warp.app"
                 "/Applications/Supacode.app"
                 "/Applications/1Password.app"
-                "/Applications/Google Chrome.app"
+                "/Applications/Firefox.app"
                 "/Applications/Spotify.app"
                 "/System/Applications/Mail.app"
               ];
