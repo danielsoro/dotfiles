@@ -80,6 +80,7 @@
             "commitizen"
             "terraform"
             "gh"
+            "uv"
           ];
 
           casks = [
