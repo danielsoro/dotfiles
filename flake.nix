@@ -263,6 +263,7 @@
               autoload -Uz bashcompinit && bashcompinit
               export PATH="$HOME/.local/bin:$PATH";
               export PATH="$HOME/.cargo/bin:$PATH";
+              export GITHUB_TOKEN="$(gh auth token)";
               export DOCKER_HOST="unix:///var/run/docker.sock";
             '';
           };
