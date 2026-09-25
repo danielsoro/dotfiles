@@ -29,10 +29,6 @@
           hostPlatform = "aarch64-darwin";
         };
 
-        environment.variables = {
-          PATH="$HOME/.asdf/shims:$PATH";
-        };
-
         environment.systemPackages =
           [
             pkgs.nixpkgs-fmt
@@ -45,7 +41,6 @@
             pkgs.oh-my-zsh
             pkgs.fastfetch
             pkgs.git
-            pkgs.asdf-vm
             pkgs.rustup
             pkgs.mkalias
             pkgs.vim
@@ -239,6 +234,10 @@
           };
 
           fzf = {
+            enable = true;
+          };
+
+          mise = {
             enable = true;
           };
 
