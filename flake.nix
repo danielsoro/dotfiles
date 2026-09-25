@@ -262,6 +262,7 @@
             initContent = ''
               autoload -Uz bashcompinit && bashcompinit
               export PATH="$HOME/.local/bin:$PATH";
+              export PATH="$HOME/.cargo/bin:$PATH";
               export DOCKER_HOST="unix:///var/run/docker.sock";
             '';
           };
