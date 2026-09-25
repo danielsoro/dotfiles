@@ -38,7 +38,6 @@
             pkgs.fd
             pkgs.scmpuff
             pkgs.gnupg
-            pkgs.oh-my-zsh
             pkgs.fastfetch
             pkgs.git
             pkgs.rustup
@@ -189,11 +188,12 @@
         programs = {
           zsh = {
             enable = true;
-            enableCompletion = true;
-            enableBashCompletion = true;
+            # zimfw owns compinit and syntax highlighting (see .zimrc)
+            enableCompletion = false;
+            enableBashCompletion = false;
             enableFzfCompletion = true;
             enableFzfHistory = true;
-            enableSyntaxHighlighting = true;
+            enableSyntaxHighlighting = false;
           };
         };
       };
@@ -208,6 +208,27 @@
 
 
         xdg.configFile."ghostty/config".source = ./dotfiles/ghostty.config;
+
+        home.file.".zimrc" = {
+          # Store symlinks have a 1970 mtime, so zimfw's own staleness check never fires;
+          # drop init.zsh to force a rebuild on the next shell instead.
+          onChange = ''rm -f "$HOME/.zim/init.zsh"'';
+          text = ''
+            # zimfw: ${pkgs.zimfw}
+            zmodule environment
+            zmodule git
+            zmodule input
+            zmodule termtitle
+            zmodule utility
+            zmodule ohmyzsh/ohmyzsh --root plugins/sudo
+            zmodule git-info
+            zmodule prompt-pwd
+            zmodule gitster
+            zmodule completion
+            zmodule zsh-users/zsh-syntax-highlighting
+            zmodule zsh-users/zsh-autosuggestions
+          '';
+        };
 
         programs = {
           home-manager = {
@@ -244,11 +265,7 @@
           zsh = {
             enable = true;
 
-            oh-my-zsh = {
-              enable = true;
-              theme = "robbyrussell";
-              plugins = [ "git" "sudo" ];
-            };
+            enableCompletion = false;
 
             shellAliases = {
               switch = "sudo darwin-rebuild switch --flake ~/.config/nix#dcunha";
@@ -260,6 +277,12 @@
             '';
 
             initContent = ''
+              ZIM_HOME=$HOME/.zim
+              zstyle ':zim' disable-version-check yes
+              if [[ ! $ZIM_HOME/init.zsh -nt $HOME/.zimrc ]]; then
+                source ${pkgs.zimfw}/zimfw.zsh init
+              fi
+              source $ZIM_HOME/init.zsh
               autoload -Uz bashcompinit && bashcompinit
               export PATH="$HOME/.local/bin:$PATH";
               export PATH="$HOME/.cargo/bin:$PATH";
