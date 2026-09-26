@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "nix-best-practices": {
+      "source": "alleneubank/claude-code",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/nix-best-practices/SKILL.md",
+      "computedHash": "f6d14bf40d4b505dd50cb389711eae74bc1459740adb27f4641cd75c21042311"
+    }
+  }
+}
