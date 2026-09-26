@@ -317,7 +317,5 @@
           }
         ];
       };
-
-      darwinPackages = self.darwinConfigurations."dcunha".pkgs;
     };
 }
