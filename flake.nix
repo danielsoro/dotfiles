@@ -268,7 +268,8 @@
             enableCompletion = false;
 
             shellAliases = {
-              switch = "sudo darwin-rebuild switch --flake ~/.config/nix#dcunha";
+              # zimfw enables EXTENDED_GLOB, which treats '#' as a glob operator
+              switch = "noglob sudo darwin-rebuild switch --flake ~/.config/nix#dcunha";
               n = "nvim";
             };
 
