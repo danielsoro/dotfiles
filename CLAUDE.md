@@ -26,15 +26,16 @@ Commits follow Conventional Commits via commitizen (`.cz.toml`). Changes land th
 
 ## Releases
 
-Releases are cut with commitizen. `.cz.toml` sets `update_changelog_on_bump = true`, so `cz bump` rewrites `CHANGELOG.md`, bumps `version` in `.cz.toml`, commits as `bump: version X → Y` and creates the tag `Y` (semver, `major_version_zero`, tag format is the bare version). `annotated_tag = true` is required because git signs tags (`tag.gpgsign`), and a signed tag needs a message.
+Releases are cut with commitizen directly on `main`, without a PR. `.cz.toml` sets `update_changelog_on_bump = true` and `annotated_tag = true`, so `cz bump` rewrites `CHANGELOG.md`, bumps `version` in `.cz.toml`, commits as `bump: version X → Y` and creates the signed tag `Y` (semver, `major_version_zero`, tag format is the bare version). Annotated tags are required because git signs tags (`tag.gpgsign`), and a signed tag needs a message.
 
-    git worktree add -b release/<version> ../nix-release-<version> origin/main
+    git fetch origin && git checkout main && git pull --ff-only
     cz bump --dry-run        # check the increment and the next version
     cz bump                  # commit + tag + changelog
-    git push -u origin release/<version> && git push origin <version>
-    gh pr create --title "release: <version>"
+    git push origin main <version>
+    gh release create <version> --title <version> --verify-tag \
+      --notes "$(awk '/^## <version>/{f=1;next} /^## /{f=0} f' CHANGELOG.md)"
 
-Merge the release PR with a **merge commit**. Squash or rebase would leave the tag pointing at a commit that is not on `main`. Never run `cz bump` on a stale local `main`; always start from `origin/main`.
+The release notes are the `<version>` section of `CHANGELOG.md`. Releases are the one case where committing straight to `main` is expected; every other change goes through a worktree and a PR.
 
 ## Layout
 
