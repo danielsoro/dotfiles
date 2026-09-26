@@ -1,4 +1,26 @@
-## 0.1.0 (2026-01-28)
+## Unreleased
+
+### Feat
+
+- replace oh-my-zsh with zimfw
+- export GITHUB_TOKEN from gh auth
+- add cargo bin to PATH
+- add firefox cask
+- add light-background friendly zsh prompt theme
+- **flakes**: Upgrade flakes and added xclip
+
+### Fix
+
+- disable globbing in switch alias for zimfw EXTENDED_GLOB
+- resolve home-manager .zprofile clobber on activation
+- fixing brew packages
+- removing podman, because we're using docker
+
+### Refactor
+
+- replace asdf with mise
+
+## 0.2.0 (2026-01-28)
 
 ### Feat
 
