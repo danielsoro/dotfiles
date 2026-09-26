@@ -26,7 +26,7 @@ Commits follow Conventional Commits via commitizen (`.cz.toml`). Changes land th
 
 ## Releases
 
-Releases are cut with commitizen. `.cz.toml` sets `update_changelog_on_bump = true`, so `cz bump` rewrites `CHANGELOG.md`, bumps `version` in `.cz.toml`, commits as `bump: version X → Y` and creates the tag `Y` (semver, `major_version_zero`, tag format is the bare version).
+Releases are cut with commitizen. `.cz.toml` sets `update_changelog_on_bump = true`, so `cz bump` rewrites `CHANGELOG.md`, bumps `version` in `.cz.toml`, commits as `bump: version X → Y` and creates the tag `Y` (semver, `major_version_zero`, tag format is the bare version). `annotated_tag = true` is required because git signs tags (`tag.gpgsign`), and a signed tag needs a message.
 
     git worktree add -b release/<version> ../nix-release-<version> origin/main
     cz bump --dry-run        # check the increment and the next version

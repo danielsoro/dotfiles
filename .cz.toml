@@ -5,3 +5,4 @@ version_scheme = "semver"
 version = "0.2.0"
 major_version_zero = true
 update_changelog_on_bump = true
+annotated_tag = true
