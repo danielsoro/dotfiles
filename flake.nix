@@ -58,13 +58,13 @@
           ];
 
         homebrew = {
-         enable = true;
+          enable = true;
 
-         taps = [
+          taps = [
             "buo/cask-upgrade"
           ];
 
-         brews = [
+          brews = [
             "pinentry-mac"
             "ripgrep"
             "go-blueprint"
@@ -142,16 +142,16 @@
 
           };
 
-         activationScripts.extraActivation.text = ''
+          activationScripts.extraActivation.text = ''
             softwareupdate --install-rosetta --agree-to-license
-         '';
+          '';
 
           activationScripts.applications.text =
             let
               env = pkgs.buildEnv {
                 name = "system-applications";
                 paths = config.environment.systemPackages;
-                pathsToLink = ["/Applications"];
+                pathsToLink = [ "/Applications" ];
               };
             in
             pkgs.lib.mkForce ''
@@ -317,7 +317,5 @@
           }
         ];
       };
-
-      darwinPackages = self.darwinConfigurations."dcunha".pkgs;
     };
 }
