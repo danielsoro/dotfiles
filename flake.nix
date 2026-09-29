@@ -284,6 +284,9 @@
                 source ${pkgs.zimfw}/zimfw.zsh init
               fi
               source $ZIM_HOME/init.zsh
+              # gitster hardcodes %F{white} for the cwd, unreadable on light backgrounds;
+              # same prompt with the terminal's default foreground instead.
+              PS1='%B%(?:%F{green}:%F{red})%{%G➜%} %f$(prompt-pwd)''${(e)git_info[prompt]}%f%b '
               autoload -Uz bashcompinit && bashcompinit
               export PATH="$HOME/.local/bin:$PATH";
               export PATH="$HOME/.cargo/bin:$PATH";
