@@ -98,6 +98,7 @@
             "insomnia"
             "warp"
             "supacode"
+            "okta-verify"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
