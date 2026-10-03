@@ -99,6 +99,8 @@
             "warp"
             "supacode"
             "okta-verify"
+            "claude"
+            "claude-code"
           ];
           onActivation.cleanup = "zap";
           onActivation.autoUpdate = true;
